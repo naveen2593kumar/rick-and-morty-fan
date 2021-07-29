@@ -1,0 +1,32 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation-box-buttons {
+  text-align: center;
+}
+
+.navigation-box-input {
+  text-align: center;
+  margin-top: 16px;
+}
+
+@media only screen and (min-width: 600px) {
+  .navigation-box-buttons {
+    width: calc(50% - 16px);
+    display: flex;
+    text-align: right;
+    display: inline-block;
+    margin-right: 16px;
+  }
+
+  .navigation-box-input {
+    margin-left: 16px;
+    width: calc(50% - 16px);
+    display: inline-block;
+    text-align: left;
+  }
+}

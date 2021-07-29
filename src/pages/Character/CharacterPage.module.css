@@ -1,0 +1,50 @@
+.chip {
+  background-color: #22a2bd;
+  margin: 8px;
+  padding: 4px 8px;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.chip-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
+}
+
+.wrapper {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.profile-details {
+  padding: 16px;
+}
+
+.profile-details-title {
+  color: #22a2bd;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.profile-details-item {
+  padding: 8px 0;
+}
+
+@media only screen and (min-width: 600px) {
+  .wrapper {
+    flex-direction: row;
+  }
+
+  .profile-picture {
+    margin: 16px;
+  }
+
+  .profile-details {
+    margin: 16px;
+  }
+}

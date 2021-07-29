@@ -1,0 +1,57 @@
+.tile {
+  width: 320px;
+  margin: 8px;
+  height: 104px;
+  border-radius: 8px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  cursor: pointer;
+}
+
+.tile:hover {
+  box-shadow: 0 3px 10px #22a2bd;
+}
+
+.image {
+  flex: 1;
+  background: #e0e0e0;
+}
+
+.image-img {
+  height: 100%;
+  width: 100%;
+}
+
+.details {
+  flex: 2;
+  padding: 8px;
+  color: #22a2bd;
+  font-weight: bold;
+  overflow-y: auto;
+}
+
+.sub-details {
+  font-size: 10px;
+}
+
+.sub-details-line {
+  color: #000;
+  margin: 6px 0;
+  font-weight: normal;
+}
+
+.link {
+  color: #22a2bd;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #55ae46;
+}
+
+@media only screen and (min-width: 600px) {
+  .tile {
+    margin: 16px;
+  }
+}
