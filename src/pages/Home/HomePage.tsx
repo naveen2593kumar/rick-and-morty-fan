@@ -101,9 +101,10 @@ class HomePage extends Component<IHomePageProps & RouteComponentProps<{ pageId: 
                                 id="page"
                                 data-testid="pageInputField"
                                 type="number"
+                                pattern="\d*"
                                 ref={this.pageRef}
                                 max={page.info.pages}
-                                style={{ backgroundColor: '#fff', color: '#22a2bd', width: 50, padding: 8 }} />
+                                style={{ backgroundColor: '#fff', border:'1px solid black', color: '#22a2bd', width: 50, padding: 8 }} />
                             <button
                                 data-testid="goToPageButton"
                                 onClick={this.handleGoToPageClick}>Go to page</button>

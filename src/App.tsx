@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Link, Redirect, Route, Switch } from 'react-router-dom';
 
 import './App.css';
 import theRickAndMortyLogo from './images/the_rick_and_morty.png';
@@ -101,10 +101,12 @@ class App extends Component<Readonly<{}>, IAppState>{
   render() {
     return (
       <>
-        <header className="app-header">
-          <img className="app-header-logo" alt="The Rick and Morty" src={theRickAndMortyLogo} />
-        </header>
         <Router>
+          <Link to="/">
+            <header className="app-header">
+              <img className="app-header-logo" alt="The Rick and Morty" src={theRickAndMortyLogo} />
+            </header>
+          </Link>
           <main className="app-main-content">
             <Switch>
               <Route path="/character/:characterId" render={(props) => (
